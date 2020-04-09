@@ -5,6 +5,7 @@ body {
 .no-margin, body {
     margin: 0;
 }
+
 .dot {
     height: 0.7em;
     width: 15px;
@@ -12,27 +13,25 @@ body {
     border-radius: 50%;
     margin-right: 2%;
     margin-top: 0.5%;
-  }
-
-#container {
-    display: flex;
 }
 
 aside {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 90%;
     background-color: #FCCF26;
 }
-.margin-aside{
+
+.margin-aside {
     margin: 10%;
     text-align: justify;
 }
-.center{
+
+.center {
     display: flex;
     justify-content: center;
 }
+
 figure {
     display: flex;
     justify-content: center;
@@ -57,15 +56,19 @@ header {
     display: flex;
     flex-direction: column;
 }
-header > p{
+
+header>p {
     margin: -2% 0% 3%;
 }
+
 h1>span {
     color: #FCCF26;
 }
-.underline{
+
+.underline {
     border-bottom: solid #FCCF26 2px;
 }
+
 .aside-title {
     background-color: black;
     color: #FCCF26;
@@ -121,10 +124,10 @@ h1>span {
     justify-content: space-between;
 }
 
-.content>img{
+.content>img {
     height: 100%;
     margin-right: 2%;
-    width:15px
+    width: 15px
 }
 
 .content>p {
@@ -137,11 +140,13 @@ h1>span {
     flex-direction: column;
     padding-left: 2%;
 }
-.content > .recommandations{
+
+.content>.recommandations {
     display: flex;
     flex-direction: column;
     padding: 0%;
 }
+
 .text-content>h5 {
     font-weight: normal;
     margin-top: 2%;
@@ -150,4 +155,28 @@ h1>span {
 
 .text-content>p {
     text-align: justify;
+}
+
+/************************************************/
+
+@media screen and (min-width: 769px) {
+    #container {
+        display: flex;
+        flex-direction: row;
+    }
+    aside{
+        width: 90%;
+    }
+}
+
+/*************************************************/
+
+@media screen and (max-width: 768px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+    }
 }
